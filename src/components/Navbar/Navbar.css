@@ -20,6 +20,12 @@
     font-size: 1.6rem;
 }
 
+.fa-cart-arrow-down{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5,auto);

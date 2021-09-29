@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cartwidget from "./CartWidget"
 import { MenuItems } from "./Menuitems"
 import './Navbar.css'
 
@@ -6,7 +7,7 @@ class Navbar extends Component {
     state = { clicked: false }
 
     handleClick = () => {
-        this.setState({ clicked: !this.state.clicked})
+        this.setState({ clicked: !this.state.clicked })
     }
 
 
@@ -30,6 +31,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
+                <Cartwidget/>
             </nav>
         )
     }

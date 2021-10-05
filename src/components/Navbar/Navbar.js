@@ -10,6 +10,7 @@ class Navbar extends Component {
         this.setState({ clicked: !this.state.clicked })
     }
 
+    
 
 
     render() {

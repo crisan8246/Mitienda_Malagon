@@ -1,18 +1,23 @@
 import React from 'react'
-
-const Saludo = "Bienvenido"
-const Nombre = prompt("ingresa tu nombre");
-
-function ItemListContainer() {
+import Item1 from '../Item/Item1'
 
 
+const ItemListContainer = ({setItems1,items1}) => {
     return (
         <div>
-            <h2> {Saludo} {Nombre}</h2>
+            <Item1 
+            title="buso" 
+            text="es de la mejor calidad"
+            img="https://www.cottonopolis.com.co/wp-content/uploads/2020/09/Portada_tienda_negro-600x752.png"
+            setItems1={setItems1}
+            items1={items1}
+            />
+                       
         </div>
     )
 }
 
 export default ItemListContainer
+
 
 

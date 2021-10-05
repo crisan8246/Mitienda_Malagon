@@ -1,0 +1,14 @@
+.Card {
+    background-color: blue;
+    height: 900px;
+    display: grid;
+    grid-template-columns: (3);
+    grid-template-rows:(2) ;
+    grid-gap: 10px;
+    
+}
+
+.tama {
+    height: 500px;
+    
+}

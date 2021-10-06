@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Cartwidget({items1}) {
+function Cartwidget () {
     return (
         <div>
             <i class="fa fa-cart-arrow-down"></i>
-            <h1> {items1}</h1> 
+            
         </div>
     )
 }

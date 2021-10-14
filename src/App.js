@@ -4,16 +4,21 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Main from './components/Main/Main';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-
-     <Main/>      
-     <ItemListContainer/>
-    
-     
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route exact path="/products">
+          <ItemListContainer />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

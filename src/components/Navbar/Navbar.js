@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cartwidget from "./CartWidget"
 import { MenuItems } from "./Menuitems"
 import './Navbar.css'
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -16,7 +17,9 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+                <Link to ="/">
+                <h1 className="navbar-logo">Kitan<i className="fab fa-react"></i></h1>
+                </Link>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 
@@ -25,9 +28,11 @@ class Navbar extends Component {
                     {MenuItems.map((items, index) => {
                         return (
                             <li key={index}>
+                                <Link to ="/products">
                                 <a className={items.cName} href={items.url}>
                                     {items.title}
                                 </a>
+                                </Link>
                             </li>
                         )
                     })}

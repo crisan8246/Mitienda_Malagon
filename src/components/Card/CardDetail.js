@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Carta1 = ( {product,}) => {
+export const CardDetail = ({item}) => {
 
-    const{ category, description, image, title, price} = product
+    const{ category, description, image, title, price} = item
 
 
     return (
@@ -17,12 +17,8 @@ const Carta1 = ( {product,}) => {
             <a class ="btn btn-primary">on click</a>
             </div>
         </div>
-
-
-
-
     )
+   
 }
 
-export default Carta1
-
+export default CardDetail

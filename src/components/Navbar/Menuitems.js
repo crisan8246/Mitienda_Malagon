@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
-        cName: 'nav-links'
+        url: '/',
+        cName: <Link to= "/"></Link>,
     },
     // {
     //     title: 'Services',
@@ -11,13 +12,13 @@ export const MenuItems = [
     // },
     {
         title: 'Products',
-        url: '#',
-        cName: 'nav-links'
+        url: 'products',
+        cName: <Link to= "products"></Link>
     },
     {
-        title: 'Contacts US',
-        url: '#',
-        cName: 'nav-links'
+        title: 'unit',
+        url: 'unit',
+        cName: <Link to= "unit"></Link>
     },
     {
         title: 'Sign up',

@@ -20,7 +20,7 @@ const ItemListContainer = () => {
 
         Apis.get(endpoint)
              .then(response => {
-                console.log(response)
+                // console.log(response)
                 setProducts(response.data)
              })
 

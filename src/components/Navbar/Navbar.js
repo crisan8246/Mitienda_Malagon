@@ -28,11 +28,11 @@ class Navbar extends Component {
                     {MenuItems.map((items, index) => {
                         return (
                             <li key={index}>
-                                <Link to ="/products">
+                                
                                 <a className={items.cName} href={items.url}>
                                     {items.title}
                                 </a>
-                                </Link>
+                                
                             </li>
                         )
                     })}

@@ -7,14 +7,14 @@ export const CardDetail = ({item}) => {
 
     return (
 
-        <div class="card" style={{width:"18rem"}}>
+        <div class="card text-center" style={{width:"70rem"}}>
             <img src={image} class="card-img-top" alt={title}/>
             <div class ="card-body">
             <h5 class ="card-title">{title}</h5>
             <p class ="card-text">{description}</p>
             <p class ="card-text">{category}</p>
             <p class ="card-text">{price}</p>
-            <a class ="btn btn-primary">on click</a>
+            <a class ="btn btn-primary">agregar al carrito</a>
             </div>
         </div>
     )

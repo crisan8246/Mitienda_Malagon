@@ -11,7 +11,6 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <ItemDetail/>
       <Switch>
         <Route exact path="/">
           <Main />
@@ -19,8 +18,8 @@ function App() {
         <Route exact path="/products">
           <ItemListContainer />
         </Route>
-        <Route exact path="/unit">
-          <ItemDetail/>
+        <Route exact path="/products/:id">
+          <ItemDetail />
         </Route>
       </Switch>
     </BrowserRouter>

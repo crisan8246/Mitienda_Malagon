@@ -12,13 +12,13 @@ export const MenuItems = [
     // },
     {
         title: 'Products',
-        url: 'products',
-        cName: <Link to= "products"></Link>
+        url: '/products',
+        cName: 'nav'
     },
     {
-        title: 'unit',
-        url: 'unit',
-        cName: <Link to= "unit"></Link>
+        title: 'Nosotros',
+        url: '#',
+        cName: 'nav'
     },
     {
         title: 'Sign up',

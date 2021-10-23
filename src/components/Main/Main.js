@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react'
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
-import Navbar from '../Navbar/Navbar'
+import { Link } from 'react-router-dom'
 
 
 const Main = () => {
@@ -13,6 +12,9 @@ const Main = () => {
             <p>
                 Aqui encontraras lo que necesites
             </p>
+            <Link to={"/products"} className="btn btn-primary">valida nuestros product</Link>
+
+            
             {/* <Navbar/>
             { children } */}
             {/* <ItemCount/> */}
